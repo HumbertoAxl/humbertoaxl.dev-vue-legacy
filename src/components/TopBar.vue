@@ -23,9 +23,9 @@
     const router = useRouter();
     const options = [
         { text: "Home", path: "/" },
-        { text: "About", path: "/About" },
-        { text: "Projects", path: "/Projects" },
-        { text: "Contact", path: "/Contact" },
+        { text: "About", path: "/about" },
+        { text: "Projects", path: "/projects" },
+        { text: "Contact", path: "/contact" },
     ];
 
     function navigateTo(path) {
