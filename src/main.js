@@ -41,9 +41,9 @@ const vuetify = createVuetify({
 
 const routes = [
     { path: "/", component: HomePage },
-    { path: "/About", component: AboutMe },
-    { path: "/Projects", component: ProjectsView },
-    { path: "/Contact", component: ContactMe },
+    { path: "/about", component: AboutMe },
+    { path: "/projects", component: ProjectsView },
+    { path: "/contact", component: ContactMe },
 ];
 
 // 3. Create the router instance and pass the `routes` option
