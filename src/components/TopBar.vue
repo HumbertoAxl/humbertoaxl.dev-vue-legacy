@@ -1,0 +1,41 @@
+<template>
+    <div>
+        <v-toolbar elevation="2">
+            <v-toolbar-title>HUMBERTO AXL</v-toolbar-title>
+            <v-toolbar-items>
+                <v-btn
+                    v-for="option in options"
+                    :key="option"
+                    :class="{active: option.path === router.currentRoute.value.path}"
+                    :path="option.path"
+                    variant="text"
+                    @click.stop="navigateTo(option.path)"
+                >
+                    {{ option.text }}
+                </v-btn>
+            </v-toolbar-items>
+        </v-toolbar>
+    </div>
+</template>
+
+<script setup>
+    import { useRouter } from "vue-router";
+    const router = useRouter();
+    const options = [
+        { text: "Home", path: "/" },
+        { text: "About", path: "/About" },
+        { text: "Projects", path: "/Projects" },
+        { text: "Contact", path: "/Contact" },
+    ];
+
+    function navigateTo(path) {
+        router.push(path);
+    }
+</script>
+
+<style scoped>
+.active {
+    background-color: white;
+    color: black;
+}
+</style>
