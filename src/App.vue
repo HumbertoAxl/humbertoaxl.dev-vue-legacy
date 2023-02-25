@@ -14,7 +14,11 @@
 </template>
 
 <style>
+html {
+    /* font-family: "Montserrat" !important; */
+}
 .v-application__wrap {
-  height: 95vh !important;
+  min-height: 40vh !important;
+  overflow-y: hidden !important;
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <v-toolbar elevation="2">
-            <v-toolbar-title>HUMBERTO AXL</v-toolbar-title>
+    <div class="d-flex justify-center">
+        <v-toolbar
+            elevation="2"
+        >
             <v-toolbar-items>
                 <v-btn
                     v-for="option in options"
