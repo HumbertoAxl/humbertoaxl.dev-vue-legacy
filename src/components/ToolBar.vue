@@ -1,13 +1,13 @@
 <template>
-    <div class="d-flex justify-center">
+    <div>
         <v-toolbar
-            elevation="2"
+            color="transparent"
         >
-            <v-toolbar-items>
+            <v-toolbar-items class="ml-auto mr-6">
                 <v-btn
                     v-for="option in options"
                     :key="option"
-                    :class="{active: option.path === router.currentRoute.value.path}"
+                    :class="{ active: option.path === router.currentRoute.value.path }"
                     :path="option.path"
                     variant="text"
                     @click.stop="navigateTo(option.path)"
@@ -24,7 +24,6 @@
     const router = useRouter();
     const options = [
         { text: "Home", path: "/" },
-        { text: "About", path: "/about" },
         { text: "Projects", path: "/projects" },
         { text: "Contact", path: "/contact" },
     ];
