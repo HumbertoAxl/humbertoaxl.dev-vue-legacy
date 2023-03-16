@@ -3,7 +3,7 @@ import App from "@/App.vue";
 import HomePage from "@/views/HomePage.vue";
 import ProjectsView from "@/views/ProjectsView.vue";
 // import PlaceHolder from "@/components/PlaceHolder.vue";
-import AboutMe from "@/components/AboutMe.vue";
+// import AboutMe from "@/components/AboutMe.vue";
 import ContactMe from "@/components/ContactMe.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import { createVuetify } from "vuetify";
@@ -15,7 +15,7 @@ import "@mdi/font/css/materialdesignicons.css";
 const defaultTheme = {
     dark: true,
     colors: {
-        "background": "#191a1d",
+        "background": "#0f173b",
         "surface": "#1f2d40",
         "primary": "#64B5F6",
         "primary-darken-1": "#467EAC",
@@ -41,7 +41,7 @@ const vuetify = createVuetify({
 
 const routes = [
     { path: "/", component: HomePage },
-    { path: "/about", component: AboutMe },
+    // { path: "/about", component: AboutMe },
     { path: "/projects", component: ProjectsView },
     { path: "/contact", component: ContactMe },
 ];
