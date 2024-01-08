@@ -16,7 +16,7 @@
             description: "Test your knowledge of countries flags",
             gitHub: "https://github.com/HumbertoAxl/flag-guesser",
             image: "/assets/images/projects/flag-guesser.jpg",
-            link: "https://flag-guesser.netlify.app/",
+            link: "https://flags.humbertoaxl.dev/",
             name: "Flag Guesser",
             year: "2022",
         },
